@@ -1,13 +1,147 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>UiChallengeGyf</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <title>ui-challenge</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/bootstrap/css/bootstrap.min.css">
+    <!-- themify icon -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+    <!-- flag icon framework css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/flag-icon/flag-icon.min.css">
+    <!-- Menu-Search css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/menu-search/css/component.css">
+    <!-- Horizontal-Timeline css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/dashboard/horizontal-timeline/css/style.css">
+    <!-- amchart css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/dashboard/amchart/css/amchart.css">
+    <!-- flag icon framework css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/flag-icon/flag-icon.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/pages/list-scroll/list.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--color css-->
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/linearicons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/ionicons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/bootstrap/css/bootstrap.min.css">
+    <!-- themify-icons line icon -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+    <!-- flag icon framework css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/flag-icon/flag-icon.min.css">
+    <!-- Menu-Search css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/menu-search/css/component.css">
+    <!--forms-wizard css-->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/jquery.steps/css/jquery.steps.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--color css-->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/linearicons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/ionicons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+
+
+
 </head>
+
 <body>
-  <app-root></app-root>
+    <div class="theme-loader">
+        <div class="ball-scale">
+            <div></div>
+        </div>
+    </div>
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+            <app-root></app-root>
+        </div>
+    </div>
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="assets/bower_components/jquery/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/bower_components/popper.js/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/bower_components/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="assets/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="assets/bower_components/modernizr/js/modernizr.js"></script>
+    <script type="text/javascript" src="assets/bower_components/modernizr/js/css-scrollbars.js"></script>
+    <!-- classie js -->
+    <script type="text/javascript" src="assets/bower_components/classie/js/classie.js"></script>
+
+    <!-- i18next.min.js -->
+    <script type="text/javascript" src="assets/bower_components/i18next/js/i18next.min.js"></script>
+    <script type="text/javascript" src="assets/bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>
+    <script type="text/javascript" src="assets/bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
+    <script type="text/javascript" src="assets/bower_components/jquery-i18next/js/jquery-i18next.min.js"></script>
+
+
+    <!--Forms - Wizard js-->
+    <script src="assets/bower_components/jquery.cookie/js/jquery.cookie.js"></script>
+    <script src="assets/bower_components/jquery.steps/js/jquery.steps.js"></script>
+    <script src="assets/bower_components/jquery-validation/js/jquery.validate.js"></script>
+    <!-- Validation js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script type="text/javascript" src="assets/pages/form-validation/validate.js"></script>
+    <!-- Custom js -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script src="assets/pages/forms-wizard-validation/form-wizard.js"></script>
+    <script src="assets/js/pcoded.min.js"></script>
+    <script src="assets/js/demo-12.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/jquery.mousewheel.min.js"></script>
+
+    <script src="assets/pages/jquery.filer/js/jquery.filer.min.js"></script>
+    <script src="assets/pages/filer/custom-filer.js" type="text/javascript"></script>
+    <script src="assets/pages/filer/jquery.fileuploads.init.js" type="text/javascript"></script>
+
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/css/bootstrap.min.css">
+    <!-- themify-icons line icon -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+    <!-- flag icon framework css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/flag-icon/flag-icon.min.css">
+    <!-- Menu-Search css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/menu-search/css/component.css">
+    <!-- Redial css -->
+    <link rel="stylesheet" href="assets/pages/chart/radial/css/radial.css" type="text/css" media="all">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--color css-->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/linearicons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/ionicons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+
+
 </body>
+
 </html>
