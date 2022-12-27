@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{4ED3D380-273A-414F-B698-4E083A01F2BA}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Challenge-GYF" expanded="True">
+            <Node name="DAL" selected="True" />
+            <Node name="Challenge-GYF" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.DAL.ChallengeGYF.DAL.Interfaces FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.BLL.Challenge-GYF.BLL FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.BLL.ChallengeGYF.BLL.Interfaces FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.DAL.ChallengeGYF.DAL FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Challenge-GYF FirstBuild="True" PreferredExecutionTarget="/Applications/Firefox.app" />
+</Properties>
