@@ -5,6 +5,14 @@
 /Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/bin/Debug/net7.0/Challenge-GYF.runtimeconfig.json
 /Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/bin/Debug/net7.0/Challenge-GYF.dll
 /Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/bin/Debug/net7.0/Challenge-GYF.pdb
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/bin/Debug/net7.0/ChallengeGYF.BLL.dll
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/bin/Debug/net7.0/ChallengeGYF.BLL.Interfaces.dll
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/bin/Debug/net7.0/ChallengeGYF.DAL.Interfaces.dll
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/bin/Debug/net7.0/ChallengeGYF.DTO.dll
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/bin/Debug/net7.0/ChallengeGYF.BLL.Interfaces.pdb
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/bin/Debug/net7.0/ChallengeGYF.BLL.pdb
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/bin/Debug/net7.0/ChallengeGYF.DAL.Interfaces.pdb
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/bin/Debug/net7.0/ChallengeGYF.DTO.pdb
 /Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/obj/Debug/net7.0/Challenge-GYF.csproj.AssemblyReference.cache
 /Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/obj/Debug/net7.0/Challenge-GYF.GeneratedMSBuildEditorConfig.editorconfig
 /Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/obj/Debug/net7.0/Challenge-GYF.AssemblyInfoInputs.cache
@@ -19,6 +27,7 @@
 /Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/obj/Debug/net7.0/staticwebassets.build.json
 /Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/obj/Debug/net7.0/staticwebassets.development.json
 /Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/obj/Debug/net7.0/scopedcss/bundle/Challenge-GYF.styles.css
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/obj/Debug/net7.0/Challenge-GYF.csproj.CopyComplete
 /Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/obj/Debug/net7.0/Challenge-GYF.dll
 /Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/obj/Debug/net7.0/refint/Challenge-GYF.dll
 /Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/Challenge-GYF/obj/Debug/net7.0/Challenge-GYF.pdb

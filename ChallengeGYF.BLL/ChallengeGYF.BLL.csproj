@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <ProjectReference Include="ChallengeGYF.BLL.Interfaces\ChallengeGYF.BLL.Interfaces.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\ChallengeGYF.DAL.Interfaces\ChallengeGYF.DAL.Interfaces.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\ChallengeGYF.DTO\ChallengeGYF.DTO.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="ChallengeGYF.BLL.Interfaces\IProducto.cs" />
+    <Compile Remove="ChallengeGYF.BLL.Interfaces\IGenericBase.cs" />
+    <Compile Remove="ChallengeGYF.BLL.Interfaces\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Remove="ChallengeGYF.BLL.Interfaces\obj\Debug\net7.0\ChallengeGYF.BLL.Interfaces.AssemblyInfo.cs" />
+    <Compile Remove="ChallengeGYF.BLL.Interfaces\obj\Debug\net7.0\ChallengeGYF.BLL.Interfaces.GlobalUsings.g.cs" />
+    <Compile Remove="ChallengeGYF.BLL.Interfaces\ICategoria.cs" />
+    <Compile Remove="ChallengeGYF.BLL.Interfaces\obj\Debug\net7.0\ChallengeGYF.BLL.Interfaces.AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="ChallengeGYF.BLL.Interfaces\obj\project.assets.json" />
+    <Content Remove="ChallengeGYF.BLL.Interfaces\obj\ChallengeGYF.BLL.Interfaces.csproj.nuget.dgspec.json" />
+    <Content Remove="ChallengeGYF.BLL.Interfaces\bin\Debug\net7.0\ChallengeGYF.BLL.Interfaces.deps.json" />
+    <Content Remove="ChallengeGYF.BLL.Interfaces\bin\Debug\net7.0\ChallengeGYF.BLL.Interfaces.deps.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="ChallengeGYF.BLL.Interfaces\obj\ChallengeGYF.BLL.Interfaces.csproj.nuget.g.targets" />
+    <None Remove="ChallengeGYF.BLL.Interfaces\obj\project.nuget.cache" />
+    <None Remove="ChallengeGYF.BLL.Interfaces\obj\ChallengeGYF.BLL.Interfaces.csproj.nuget.g.props" />
+    <None Remove="ChallengeGYF.BLL.Interfaces\obj\Debug\net7.0\ChallengeGYF.BLL.Interfaces.assets.cache" />
+    <None Remove="ChallengeGYF.BLL.Interfaces\obj\Debug\net7.0\ChallengeGYF.BLL.Interfaces.AssemblyInfoInputs.cache" />
+    <None Remove="ChallengeGYF.BLL.Interfaces\obj\Debug\net7.0\ChallengeGYF.BLL.Interfaces.csproj.AssemblyReference.cache" />
+    <None Remove="ChallengeGYF.BLL.Interfaces\obj\Debug\net7.0\ChallengeGYF.BLL.Interfaces.csproj.FileListAbsolute.txt" />
+    <None Remove="ChallengeGYF.BLL.Interfaces\obj\Debug\net7.0\ChallengeGYF.BLL.Interfaces.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="ChallengeGYF.BLL.Interfaces\obj\Debug\net7.0\ChallengeGYF.BLL.Interfaces.csproj.CoreCompileInputs.cache" />
+    <None Remove="ChallengeGYF.BLL.Interfaces\obj\Debug\net7.0\ChallengeGYF.BLL.Interfaces.dll" />
+    <None Remove="ChallengeGYF.BLL.Interfaces\obj\Debug\net7.0\refint\ChallengeGYF.BLL.Interfaces.dll" />
+    <None Remove="ChallengeGYF.BLL.Interfaces\obj\Debug\net7.0\ChallengeGYF.BLL.Interfaces.pdb" />
+    <None Remove="ChallengeGYF.BLL.Interfaces\bin\Debug\net7.0\ChallengeGYF.DAL.Interfaces.pdb" />
+    <None Remove="ChallengeGYF.BLL.Interfaces\bin\Debug\net7.0\ChallengeGYF.DTO.pdb" />
+    <None Remove="ChallengeGYF.BLL.Interfaces\bin\Debug\net7.0\ChallengeGYF.DTO.dll" />
+    <None Remove="ChallengeGYF.BLL.Interfaces\bin\Debug\net7.0\ChallengeGYF.DAL.Interfaces.dll" />
+    <None Remove="ChallengeGYF.BLL.Interfaces\obj\Debug\net7.0\ChallengeGYF.BLL.Interfaces.csproj.CopyComplete" />
+    <None Remove="ChallengeGYF.BLL.Interfaces\bin\Debug\net7.0\ChallengeGYF.BLL.Interfaces.dll" />
+    <None Remove="ChallengeGYF.BLL.Interfaces\obj\Debug\net7.0\ref\ChallengeGYF.BLL.Interfaces.dll" />
+    <None Remove="ChallengeGYF.BLL.Interfaces\bin\Debug\net7.0\ChallengeGYF.BLL.Interfaces.pdb" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ChallengeGYF.DAL\ChallengeGYF.DAL.EF.csproj" />
+    <ProjectReference Include="..\..\ChallengeGYF.BLL\ChallengeGYF.BLL.csproj" />
+    <ProjectReference Include="..\..\ChallengeGYF.DAL.Interfaces\ChallengeGYF.DAL.Interfaces.csproj" />
+    <ProjectReference Include="..\ChallengeGYF.DTO.csproj" />
+    <ProjectReference Include="..\..\ChallengeGYF.BLL\ChallengeGYF.BLL.Interfaces\ChallengeGYF.BLL.Interfaces.csproj" />
+  </ItemGroup>
+</Project>

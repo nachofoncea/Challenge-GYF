@@ -1,7 +1,7 @@
 <div class="card">
     <div class="card-body">
-        <h3 class="card-title" style="
-                                      background-color:bisque; 
+        <h3 class="card-title" style="color:white;
+                                      background-color:steelblue; 
                                       padding-top: 10px;
                                       padding-left: 10px;
                                       height:50px;">Gestión de stock</h3>
@@ -14,17 +14,46 @@
                                     border-color: black; 
                                     margin-bottom:10px; 
                                     size-adjust: 100px;
-                                    margin-left: 48%" class="btn btn-success">Vender</a>
-        <table class="table">
+                                    margin-left: 48%" class="btn btn-warning">Vender</a>
+        <table class="table" style="text-align: left">
         <thead>
         <tr>
+            <th scope="col">
+                <button mat-mini-fab color="delete"
+                        title="Añadir producto">+</button>
+            </th>
             <th scope="col">ID</th>
             <th scope="col">Precio</th>
             <th scope="col">Fecha de Carga</th>
-            <th scope="col">Categoria</th>
+            <th scope="col2">Categoria</th>
+           
         </tr>
         </thead>
         <tbody>
+            <tr *ngFor="let item of datos; let idx = index">
+                <td>
+                    <button mat-raised-button color="warn"
+                            style="margin: 10px"
+                            title="Eliminar registro">Eliminar</button>
+
+                    <button mat-raised-button color="accent"
+                            title="Editar registro">Editar</button>   
+                </td>
+                <td>
+                    <b class="text-right">{{item.ProductoID}} </b>
+                </td>
+                    <td>
+                    <b>{{'$' + item.Precio}} </b>
+                </td>
+                <td>
+                    <a>{{item.FechaCarga | date:'dd/MM/yyyy'}} </a>
+                </td>
+                <td>
+                    <a> {{item.Categoria}} </a>   <b>  ({{item.CategoriaID}}) </b>
+                </td>
+              
+
+            </tr>
         </tbody>
     </table>
 

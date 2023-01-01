@@ -1,0 +1,17 @@
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/bin/Debug/net7.0/ChallengeGYF.BLL.Interfaces.deps.json
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/bin/Debug/net7.0/ChallengeGYF.BLL.Interfaces.dll
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/bin/Debug/net7.0/ChallengeGYF.BLL.Interfaces.pdb
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/bin/Debug/net7.0/ChallengeGYF.DAL.Interfaces.dll
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/bin/Debug/net7.0/ChallengeGYF.DTO.dll
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/bin/Debug/net7.0/ChallengeGYF.DAL.Interfaces.pdb
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/bin/Debug/net7.0/ChallengeGYF.DTO.pdb
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/obj/Debug/net7.0/ChallengeGYF.BLL.Interfaces.csproj.AssemblyReference.cache
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/obj/Debug/net7.0/ChallengeGYF.BLL.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/obj/Debug/net7.0/ChallengeGYF.BLL.Interfaces.AssemblyInfoInputs.cache
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/obj/Debug/net7.0/ChallengeGYF.BLL.Interfaces.AssemblyInfo.cs
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/obj/Debug/net7.0/ChallengeGYF.BLL.Interfaces.csproj.CoreCompileInputs.cache
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/obj/Debug/net7.0/ChallengeGYF.BLL.Interfaces.csproj.CopyComplete
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/obj/Debug/net7.0/ChallengeGYF.BLL.Interfaces.dll
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/obj/Debug/net7.0/refint/ChallengeGYF.BLL.Interfaces.dll
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/obj/Debug/net7.0/ChallengeGYF.BLL.Interfaces.pdb
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/obj/Debug/net7.0/ref/ChallengeGYF.BLL.Interfaces.dll

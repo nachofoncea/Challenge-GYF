@@ -5,10 +5,12 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Challenge_GYF</RootNamespace>
+    <AssemblyName>Challenge-GYF</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'ChallengeGYF.API' " />
   <ItemGroup>
     <None Remove="Controllers\" />
   </ItemGroup>
@@ -16,9 +18,6 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ChallengeGYF.BLL\ChallengeGYF.BLL.Interfaces\ChallengeGYF.BLL.Interfaces.csproj">
-      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
-    </ProjectReference>
     <ProjectReference Include="..\ChallengeGYF.BLL\ChallengeGYF.BLL.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
@@ -28,5 +27,20 @@
     <ProjectReference Include="..\ChallengeGYF.DTO\ChallengeGYF.DTO.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\ChallengeGYF.DTO\ChallengeGYF.Shared.IOC\ChallengeGYF.Shared.IOC.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\ChallengeGYF.DAL\ChallengeGYF.DAL.EF.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\ChallengeGYF.BLL\ChallengeGYF.BLL.Interfaces\ChallengeGYF.BLL.Interfaces.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.OpenApi" Version="1.4.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.4.0" />
   </ItemGroup>
 </Project>

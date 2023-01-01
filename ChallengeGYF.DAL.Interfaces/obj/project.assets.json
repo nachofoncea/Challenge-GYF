@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "ChallengeGYF.DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ChallengeGYF.DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ChallengeGYF.DTO.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ChallengeGYF.DTO/1.0.0": {
+      "type": "project",
+      "path": "../ChallengeGYF.DTO/ChallengeGYF.DTO.csproj",
+      "msbuildProject": "../ChallengeGYF.DTO/ChallengeGYF.DTO.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "ChallengeGYF.DTO >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/nachofoncea/.nuget/packages/": {}
@@ -32,7 +51,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.DTO/ChallengeGYF.DTO.csproj": {
+              "projectPath": "/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.DTO/ChallengeGYF.DTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

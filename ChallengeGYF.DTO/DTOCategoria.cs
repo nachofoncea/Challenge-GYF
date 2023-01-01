@@ -1,11 +1,13 @@
 ﻿using System;
-namespace ChallengeGYF.DTO
+
+namespace ChallengeGYF.Shared.DTO
 {
-	public class DTOProducto
-	{
-		public DTOProducto()
-		{
-		}
-	}
+    public class DTOCategoria
+    {
+        public int CategoriaID { get; set; }
+        public string? Detalle { get; set; }
+        public string? Observaciones { get; set; }
+
+    }
 }
 
