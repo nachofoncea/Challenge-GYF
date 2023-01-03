@@ -24,6 +24,7 @@ namespace ChallengeGYF.DAL.EF
             using (var context = new ContextDB())
             {
                 var _pp = context.Producto
+                                 .Include(x => x.Categoria)
                                  .ToList();
 
                 foreach (var item in _pp)
@@ -105,8 +106,8 @@ namespace ChallengeGYF.DAL.EF
                 CategoriaID = item.CategoriaID,
                 FechaCarga = item.FechaCarga,
                 Precio = item.Precio,
-                Categoria = _GetCategoria(item.CategoriaID).ToString()
-               
+                Categoria = item.Categoria.Descripcion
+
             };
 
         }
@@ -120,24 +121,8 @@ namespace ChallengeGYF.DAL.EF
                 CategoriaID = item.CategoriaID,
                 FechaCarga = item.FechaCarga,
                 Precio = item.Precio,
-                
+
             };
-
         }
-        
-        private String _GetCategoria(int categoriaID)
-        {
-            var _ret = new Models.Categoria();
-            using (var context = new ContextDB())
-            {
-                _ret = context.Categoria
-                               .FirstOrDefault(x => x.CategoriaID == categoriaID);
-            }
-
-            return _ret.Descripcion;
-        }
-
     }
-
-
 }

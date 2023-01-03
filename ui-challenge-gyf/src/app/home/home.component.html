@@ -1,7 +1,12 @@
+
 <div class="card">
     <div class="card-body">
+        <router-outlet></router-outlet>
         <h3 class="card-title" style="color:white;
                                       background-color:steelblue; 
+                                      border-style: solid;
+                                      border-color: black;
+                                      border-width: 2px;
                                       padding-top: 10px;
                                       padding-left: 10px;
                                       height:50px;">Gestión de stock</h3>
@@ -10,22 +15,28 @@
                                             padding-left:10px;
                                             padding-top: 5px;
                                             text-align: center">Listado de productos</p>
-                <a href="#" style=" color: black;
+                <a style=" color: black;
                                     border-color: black; 
                                     margin-bottom:10px; 
                                     size-adjust: 100px;
-                                    margin-left: 48%" class="btn btn-warning">Vender</a>
+                                    margin-left: 48%" 
+                                    class="btn btn-warning"
+                                    [routerLink]="['/VentaComponent']">Venta</a>
         <table class="table" style="text-align: left">
         <thead>
         <tr>
             <th scope="col">
-                <button mat-mini-fab color="delete"
-                        title="Añadir producto">+</button>
+                <button mat-mini-fab 
+                        style="background-color: rgb(57, 144, 95);
+                               color: white;
+                               margin-left: 80px"
+                        title="Añadir producto"
+                        routerLink="/addproducto">+</button>
             </th>
             <th scope="col">ID</th>
             <th scope="col">Precio</th>
             <th scope="col">Fecha de Carga</th>
-            <th scope="col2">Categoria</th>
+            <th scope="col2">Categoria (ID)</th>
            
         </tr>
         </thead>
@@ -36,7 +47,9 @@
                             style="margin: 10px"
                             title="Eliminar registro">Eliminar</button>
 
-                    <button mat-raised-button color="accent"
+                    <button mat-raised-button 
+                            style="background-color: rgb(74, 74, 138);
+                                   color: white;"
                             title="Editar registro">Editar</button>   
                 </td>
                 <td>
@@ -51,12 +64,9 @@
                 <td>
                     <a> {{item.Categoria}} </a>   <b>  ({{item.CategoriaID}}) </b>
                 </td>
-              
-
             </tr>
         </tbody>
     </table>
-
   </div>
-
 </div>
+

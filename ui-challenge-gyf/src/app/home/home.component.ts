@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductoModel } from '../../models/producto.model';
+import { Router } from '@angular/router';
 import { ProductoService } from '../../services/producto.service'
 
 @Component({
@@ -7,14 +7,20 @@ import { ProductoService } from '../../services/producto.service'
   templateUrl: './home.component.html',
   styleUrls: []
 })
+
 export class HomeComponent implements OnInit {
   
   datos: any;
 
-  constructor(private service: ProductoService) {}
+constructor(private service: ProductoService,
+            private router: Router) {}
 
   ngOnInit() {
     this.makeQuery();
+  }
+  
+  navigateAddProducto(){
+    this.router.navigate(['/AddProductoComponent'])
   }
 
   makeQuery() {
@@ -25,6 +31,7 @@ export class HomeComponent implements OnInit {
 
     }
   }
+
 
 
 

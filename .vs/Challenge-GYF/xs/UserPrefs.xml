@@ -5,16 +5,14 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.DAL.ChallengeGYF.DAL.EF PreferredExecutionTarget="/Applications/Firefox.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.DAL/Producto.cs" relfile="ChallengeGYF.DAL/Producto.cs" line="101" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="ChallengeGYF.DAL/Models/Producto.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ChallengeGYF.DAL/Producto.cs">
     <Files>
-      <File FileName="ChallengeGYF.DAL/Producto.cs" Line="122" Column="29" />
+      <File FileName="ChallengeGYF.DAL/Producto.cs" Line="109" Column="16" />
       <File FileName="ChallengeGYF.DAL/Models/Producto.cs" Line="18" Column="54" />
-      <File FileName="ChallengeGYF.DAL/Models/Categoria.cs" Line="1" Column="1" />
       <File FileName="ChallengeGYF.DTO/DTOProducto.cs" Line="15" Column="2" />
+      <File FileName="ChallengeGYF.BLL/Categoria.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,9 +23,7 @@
             </Node>
             <Node name="DAL" expanded="True">
               <Node name="ChallengeGYF.DAL.EF" expanded="True">
-                <Node name="Models" expanded="True">
-                  <Node name="Producto.cs" selected="True" />
-                </Node>
+                <Node name="Models" expanded="True" />
               </Node>
               <Node name="ChallengeGYF.DAL.Interfaces" expanded="True" />
             </Node>
