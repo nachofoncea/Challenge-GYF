@@ -7,7 +7,7 @@ namespace ChallengeGYF.DAL.Interfaces
     public interface IProducto<T> : IGenericBase<T>
     {
 
-
+        T Vender(int Presupuesto);
 
     }
 }

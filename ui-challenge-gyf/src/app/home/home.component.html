@@ -20,7 +20,7 @@
                                     size-adjust: 100px;
                                     margin-left: 48%" 
                                     class="btn btn-warning"
-                                    [routerLink]="['/VentaComponent']">Venta</a>
+                                    (click)="openDialog()">Venta</a>
         <table class="table" style="text-align: left">
         <thead>
         <tr>
@@ -50,7 +50,8 @@
                     <button mat-raised-button 
                             style="background-color: rgb(74, 74, 138);
                                    color: white;"
-                            title="Editar registro">Editar</button>   
+                            title="Editar registro"
+                            [routerLink]="['/addproducto', item.ProductoID]">Editar</button>   
                 </td>
                 <td>
                     <b class="text-right">{{item.ProductoID}} </b>

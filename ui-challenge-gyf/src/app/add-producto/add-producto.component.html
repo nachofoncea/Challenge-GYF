@@ -1,5 +1,6 @@
 
 <div class="card">
+    <form (ngSubmit)="save(form)" #form="ngForm">
     <div class="card-body">
         <h3 class="card-title" style="color:white;
                                       background-color:rgb(95, 185, 131); 
@@ -21,6 +22,8 @@
                     <input type="number"
                                 class="form-control" 
                                 style="font-size: 12pt;"
+                                name="Precio"
+                                [(ngModel)]="_producto.Precio"
                                 placeholder="Ingrese un precio entre $1 y $1.000.000">
             </div>
             <b>*</b>
@@ -33,13 +36,14 @@
                     <select name="categoria"
                     class="form-control"
                     style="font-size: 12pt;"
-                    size=" 1px">
+                    size=" 1px"
+                    name="Categoria"
+                    [(ngModel)]="_producto.CategoriaID">
 
                         <option selected>Seleccione una categoria</option>
                         <option *ngFor="let item of data; let i = index"  
                                 [ngValue]="item.CategoriaID">
-            
-                                     {{item.Detalle}}
+                                    {{item.Detalle}}
                         </option>
                     </select>
                 </div>
@@ -51,12 +55,28 @@
 
                 <div class="col-4" style="padding-bottom: 30px;">
                     <input type="text"
-                                class="form-control" 
-                                style="font-size: 12pt;
-                                       height: 100px;
-                                       "
-                                placeholder="">
+                            class="form-control" 
+                            style="font-size: 12pt;
+                                   height: 100px;"
+                             name="Observaciones"
+                             [(ngModel)]="_producto.Observaciones">
             </div>
         </div>
+        <div *ngIf="_errors.length>0" class="alert alert-danger" role="alert">
+            <ul>
+                <li *ngFor="let erro of _errors">
+                    * {{ erro }}
+                </li>
+            </ul>
+        </div>
      <b style="margin:20px ;">El ID de este producto se asignará de manera automatica</b>
+     <div class="row justify-content-center">
+        <div class="col-md-6" style="padding: 50px;">
+            <button routerLink="/" class="btn btn-inverse"><i
+                    class="icofont icofont-exchange"></i>Cerrar</button>
+            <button class="btn btn-success" style="margin-left: 5px;" type="submit"><i
+                    class="icofont icofont-check-circled"></i>Aceptar</button>
+        </div>
+      </div>
+    </form>
 </div> 

@@ -41,15 +41,49 @@ namespace ChallengeGYF.API.Controllers
         [HttpPost]
         public ActionResult Add([FromBody] Shared.DTO.DTOProducto item)
         {
-            var id = _bll.Add(item);
-            return Ok();
+            item.FechaCarga = System.DateTime.Now;
+
+            if (item.Precio <= 0)
+            {
+                return StatusCode(400, "El precio debe ser mayor a 0");
+            }
+
+            if (item.Precio > 1000000)
+            {
+                return StatusCode(400, "El precio debe ser menor a 1000000");
+            }
+            if (item.Categoria == null)
+            {
+                return StatusCode(400, "No hay Categoria seleccionada");
+            }
+            else
+            {
+                var id = _bll.Add(item);
+                return Ok();
+            }
         }
 
         [HttpPut]
         public ActionResult Update([FromBody] Shared.DTO.DTOProducto item)
         {
-            _bll.Update(item);
-            return Ok();
+            if (item.Precio <= 0)
+            {
+                return StatusCode(400, "El precio debe ser mayor a 0");
+            }
+
+            if (item.Precio > 1000000)
+            {
+                return StatusCode(400, "El precio debe ser menor a 1000000");
+            }
+            if (item.Categoria == null)
+            {
+                return StatusCode(400, "No hay Categoria seleccionada");
+            }
+            else
+            {
+                _bll.Update(item);
+                return Ok();
+            }
         }
 
         [HttpGet]
@@ -57,6 +91,13 @@ namespace ChallengeGYF.API.Controllers
         public DTOEntity GetByID(int ID)
         {
             return _bll.GetByID(ID);
+        }
+
+        [HttpGet]
+        [Route("{ID}")]
+        public DTOEntity Vender(int Presupuesto)
+        {
+            return _bll.Vender(Presupuesto);
         }
 
         [HttpDelete]

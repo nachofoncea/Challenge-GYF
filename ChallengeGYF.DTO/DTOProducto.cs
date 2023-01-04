@@ -8,7 +8,7 @@ namespace ChallengeGYF.Shared.DTO
         public int Precio { get; set; }
         public DateTime FechaCarga { get; set; }
         public int CategoriaID { get; set; }
-        public string Categoria { get; set; }
+        public string? Categoria { get; set; }
         public string? Observaciones { get; set; }
 
     }

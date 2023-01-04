@@ -22,7 +22,7 @@ export class ProductoService {
     let _url=environment.apiUrl+ "Producto";
     return this.httpClient.get<ProductoModel[]>(_url);
   }
-  DeleteProducto(id:any) : Observable<void>{
+  deleteProducto(id:any) : Observable<void>{
 
     let _url=environment.apiUrl+ "Producto/" + id;
 
@@ -36,4 +36,27 @@ export class ProductoService {
             
            );
   }
+
+  getByID(id: number){
+
+    let _url=environment.apiUrl + "Producto/";
+    return this.httpClient.get(_url + id);
+
+  }
+  saveArticulo(producto:ProductoModel): Observable<any> {
+
+    let _url=environment.apiUrl + "Producto";
+    return this.httpClient.post<ProductoModel>(_url, producto, this.httpOptions);
+               
+  }
+
+  Update(producto:ProductoModel): Observable<ProductoModel>{
+    
+    let _url=environment.apiUrl + "Producto";
+
+    return this.httpClient.put<ProductoModel>(_url, producto);
+
+  }
+
+
 }
