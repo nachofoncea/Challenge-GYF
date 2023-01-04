@@ -29,18 +29,16 @@ export class AddProductoComponent implements OnInit {
    ngOnInit() {
     this.makeQuery()
 
-   this.productoID = this.route.snapshot.paramMap.get('ProductoID') || '';
+    this.productoID = this.route.snapshot.paramMap.get('ProductoID') || '';
 
-    this._producto.ProductoID = parseInt(this.productoID);
+        if(this.productoID != "")
+            {
+              this._producto.ProductoID = parseInt(this.productoID);
 
-    if (this._producto.ProductoID != NaN != undefined ){
-    console.log(this._producto.ProductoID)
-    if(this._producto.ProductoID!=0)  
-    {
-        this.productoservice.getByID(this._producto.ProductoID)
-                    .subscribe( (resp: any) => this._producto=resp );
-    }
-  }
+              this.productoservice.getByID(this._producto.ProductoID)
+              .subscribe( (resp: any) => this._producto=resp );
+            }
+
 }
 
   makeQuery() {
@@ -54,7 +52,7 @@ export class AddProductoComponent implements OnInit {
       if(this.isValid() == true)
       {
         console.log(this._producto.ProductoID)
-        if(this._producto.ProductoID == NaN  == null)
+        if(this._producto.ProductoID == undefined)
         {  
         this.productoservice.saveArticulo(this._producto)
                             .subscribe(resp=> this.router.navigate(["/"]));
