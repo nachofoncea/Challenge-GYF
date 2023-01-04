@@ -6,9 +6,8 @@ import { VentaComponent } from './venta/venta.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path:'VentaComponent', component: VentaComponent},
-  { path:'addproducto', component: AddProductoComponent},
-  { path:'addproducto/:ProductoID', component: AddProductoComponent},
+  { path:'AddProducto', component: AddProductoComponent},
+  { path:'AddProducto/:ProductoID', component: AddProductoComponent},
   { path:'', pathMatch: 'full', redirectTo:'/home'},
 
 ];
