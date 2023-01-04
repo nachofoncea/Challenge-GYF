@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductoService } from '../../services/producto.service'
+import SweetAlert from 'sweetalert2'
 
 @Component({
   selector: 'app-root',
@@ -28,8 +29,26 @@ constructor(private service: ProductoService,
       this.datos = resp;
       
       });
-
     }
+
+    deleteProducto(id: number, idx: any) {
+
+      SweetAlert.fire({
+        title: '¿Borrar el comprobante?',
+        text: "",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Confirmar',
+        cancelButtonText: 'Cancelar',
+        reverseButtons: true
+      }).then((resp) => {
+        if (resp.value) { 
+            this.service.DeleteProducto(id)
+           .subscribe(this.datos.splice(idx,1)
+           );
+    }});
+    }
+
   }
 
 

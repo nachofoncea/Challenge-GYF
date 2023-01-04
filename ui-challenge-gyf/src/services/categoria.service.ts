@@ -4,12 +4,13 @@ import { Observable, of} from "rxjs";
 import { map, catchError, tap} from "rxjs/operators";
 import { HttpClient,HttpHeaders } from "@angular/common/http";
 import { environment } from '../environments/environment';
+import { CategoriaModel } from 'src/models/categoria.model';
 
 @Injectable({
   providedIn: 'root'
 })
 
-export class ProductoService {
+export class CategoriaService {
 
   constructor(private httpClient: HttpClient) { }
 
@@ -19,21 +20,7 @@ export class ProductoService {
 
   getAll(): Observable<any> {
     
-    let _url=environment.apiUrl+ "Producto";
-    return this.httpClient.get<ProductoModel[]>(_url);
-  }
-  DeleteProducto(id:any) : Observable<void>{
-
-    let _url=environment.apiUrl+ "Producto/" + id;
-
-    let httpdeleteOptions = {
-      headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
-      body:id
-    };
-
-    return this.httpClient.delete<void>(_url, httpdeleteOptions)
-                        .pipe(
-            
-           );
+    let _url=environment.apiUrl+ "Categoria";
+    return this.httpClient.get<CategoriaModel[]>(_url);
   }
 }

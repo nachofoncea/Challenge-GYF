@@ -1,7 +1,6 @@
 
 <div class="card">
     <div class="card-body">
-        <router-outlet></router-outlet>
         <h3 class="card-title" style="color:white;
                                       background-color:steelblue; 
                                       border-style: solid;
@@ -45,6 +44,7 @@
                 <td>
                     <button mat-raised-button color="warn"
                             style="margin: 10px"
+                            (click)="deleteProducto(item.ProductoID, idx)" 
                             title="Eliminar registro">Eliminar</button>
 
                     <button mat-raised-button 
