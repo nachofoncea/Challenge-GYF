@@ -5,6 +5,7 @@ import SweetAlert from 'sweetalert2'
 import { VentaComponent } from '../venta/venta.component';
 import { MatDialog } from '@angular/material/dialog';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './home.component.html',
@@ -14,6 +15,8 @@ import { MatDialog } from '@angular/material/dialog';
 export class HomeComponent implements OnInit {
   
   datos: any;
+
+
 
 constructor(private service: ProductoService,
             private router: Router,

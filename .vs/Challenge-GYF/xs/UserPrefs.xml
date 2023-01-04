@@ -1,18 +1,34 @@
 ﻿<Properties StartupConfiguration="{4ED3D380-273A-414F-B698-4E083A01F2BA}|https">
-  <DisabledProjects>
-    <String>Challenge-GYF.BLL/Challenge-GYF.BLL.Interfaces/Challenge-GYF.BLL.Interfaces.csproj</String>
-  </DisabledProjects>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.DAL.ChallengeGYF.DAL.EF PreferredExecutionTarget="/Applications/Firefox.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="ChallengeGYF.DAL/Producto.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ChallengeGYF.API PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>Challenge-GYF.BLL/Challenge-GYF.BLL.Interfaces/Challenge-GYF.BLL.Interfaces.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ChallengeGYF.BLL/Producto.cs">
     <Files>
-      <File FileName="ChallengeGYF.DAL/Producto.cs" Line="109" Column="16" />
+      <File FileName="ChallengeGYF.DAL/Producto.cs" Line="84" Column="1" />
       <File FileName="ChallengeGYF.DAL/Models/Producto.cs" Line="18" Column="54" />
-      <File FileName="ChallengeGYF.DTO/DTOProducto.cs" Line="15" Column="2" />
+      <File FileName="ChallengeGYF.DTO/DTOProducto.cs" Line="11" Column="23" />
       <File FileName="ChallengeGYF.BLL/Categoria.cs" Line="1" Column="1" />
+      <File FileName="ChallengeGYF.DTO/DTOCategoria.cs" Line="1" Column="1" />
+      <File FileName="Challenge-GYF/Controllers/CategoriaController.cs" Line="44" Column="12" />
+      <File FileName="Challenge-GYF/Controllers/ProductoController.cs" Line="100" Column="45" />
+      <File FileName="ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/IGenericBase.cs" Line="8" Column="4" />
+      <File FileName="ChallengeGYF.DAL/Categoria.cs" Line="12" Column="30" />
+      <File FileName="Challenge-GYF/Program.cs" Line="16" Column="1" />
+      <File FileName="ChallengeGYF.BLL/BLLBase.cs" Line="7" Column="47" />
+      <File FileName="ChallengeGYF.DAL.Interfaces/IProducto.cs" Line="14" Column="1" />
+      <File FileName="ChallengeGYF.DAL.Interfaces/IGenericBase.cs" Line="12" Column="29" />
+      <File FileName="ChallengeGYF.DAL.Interfaces/ICategoria.cs" Line="1" Column="1" />
+      <File FileName="ChallengeGYF.BLL/Producto.cs" Line="18" Column="32" />
+      <File FileName="ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/IProducto.cs" Line="7" Column="18" />
+      <File FileName="ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/ICategoria.cs" Line="1" Column="1" />
+      <File FileName="ChallengeGYF.DAL/BaseDAL.cs" Line="12" Column="39" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,18 +36,16 @@
           <Node name="Challenge-GYF" expanded="True">
             <Node name="BLL" expanded="True">
               <Node name="ChallengeGYF.BLL" expanded="True" />
+              <Node name="ChallengeGYF.BLL.Interfaces" expanded="True" />
             </Node>
             <Node name="DAL" expanded="True">
-              <Node name="ChallengeGYF.DAL.EF" expanded="True">
-                <Node name="Models" expanded="True" />
+              <Node name="ChallengeGYF.DAL.EF" expanded="True" />
+              <Node name="ChallengeGYF.DAL.Interfaces" expanded="True">
+                <Node name="IProducto.cs" selected="True" />
               </Node>
-              <Node name="ChallengeGYF.DAL.Interfaces" expanded="True" />
             </Node>
             <Node name="Shared" expanded="True">
               <Node name="ChallengeGYF.DTO" expanded="True" />
-              <Node name="ChallengeGYF.Shared.IOC" expanded="True">
-                <Node name="Dependencies" expanded="True" />
-              </Node>
             </Node>
             <Node name="ChallengeGYF.API" expanded="True">
               <Node name="Dependencies" expanded="True">
@@ -43,14 +57,7 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="ClassPad">
-        <State name="__root__">
-          <Node name="Challenge-GYF" expanded="True" />
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ChallengeGYF.API PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
