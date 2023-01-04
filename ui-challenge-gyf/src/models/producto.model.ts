@@ -3,9 +3,10 @@ export class ProductoModel {
 
     construct() {  }
 
-        ID: number;
-        Precio: Number;
+        ProductoID: number;
+        Precio: number;
         FechaCarga: Date;
-        CategoriaID: String;
+        CategoriaID: number;
+        Observaciones: string;
 
 }

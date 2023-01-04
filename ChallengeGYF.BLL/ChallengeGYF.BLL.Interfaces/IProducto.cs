@@ -4,6 +4,6 @@ namespace ChallengeGYF.BLL.Interfaces
 {
     public interface IProducto<T> : IGenericBase<T>
     {
-
+        T Vender(int Presupuesto);
     }
 }

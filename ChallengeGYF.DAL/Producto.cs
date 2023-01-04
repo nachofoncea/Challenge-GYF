@@ -59,6 +59,12 @@ namespace ChallengeGYF.DAL.EF
 
                 var _entity = this._GetByID(item.ProductoID);
 
+                if (item.Categoria == null)
+                {
+                    item.Categoria = _GetCategoria(item.CategoriaID);
+                }
+
+
                 _entity = _Map(item);
 
                 context.Producto.Update(_entity);
@@ -70,6 +76,12 @@ namespace ChallengeGYF.DAL.EF
         {
             return _Map(_GetByID(ID));
         }
+
+        public DTOEntity Vender(int Presupuesto)
+        {
+            throw new NotImplementedException();
+        }
+
 
         public void Delete(int ID)
         {
@@ -92,37 +104,53 @@ namespace ChallengeGYF.DAL.EF
             using (var context = new ContextDB())
             {
                 _ret = context.Producto
+                               .Include(x => x.Categoria)
                                .FirstOrDefault(x => x.ProductoID == ID);
             }
-
+            
+            
             return _ret;
         }
 
         private DTOEntity _Map(ModelEntity item)
         {
-            return new DTOEntity
             {
-                ProductoID = item.ProductoID,
-                CategoriaID = item.CategoriaID,
-                FechaCarga = item.FechaCarga,
-                Precio = item.Precio,
-                Categoria = item.Categoria.Descripcion
+                return new DTOEntity
+                {
+                    ProductoID = item.ProductoID,
+                    CategoriaID = item.CategoriaID,
+                    FechaCarga = item.FechaCarga,
+                    Precio = item.Precio,
+                    Categoria = item.Categoria.Descripcion
 
-            };
+                };
+            }
 
         }
 
         private ModelEntity _Map(DTOEntity item)
         {
-
-            return new ModelEntity
-            {
-                ProductoID = item.ProductoID,
-                CategoriaID = item.CategoriaID,
-                FechaCarga = item.FechaCarga,
-                Precio = item.Precio,
-
-            };
+                return new ModelEntity
+                {
+                    ProductoID = item.ProductoID,
+                    CategoriaID = item.CategoriaID,
+                    FechaCarga = item.FechaCarga,
+                    Precio = item.Precio,
+                };
         }
-    }
-}
+
+
+        private String _GetCategoria(int categoriaID)
+        {
+            var _ret = new Models.Categoria();
+            using (var context = new ContextDB())
+            {
+                _ret = context.Categoria
+                               .FirstOrDefault(x => x.CategoriaID == categoriaID);
+            }
+
+            return _ret.Descripcion;
+        }
+
+
+    }}

@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog'; 
 
 //Components
 import { HomeComponent } from './home/home.component';
@@ -30,7 +31,8 @@ import { AppComponent } from './app.component';
     FormsModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    MatDialogModule
   ],
   providers: [HttpClientModule],
   bootstrap: [AppComponent]

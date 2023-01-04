@@ -41,7 +41,7 @@ namespace ChallengeGYF.API.Controllers
         [HttpPost]
         public ActionResult Add([FromBody] Shared.DTO.DTOCategoria item)
         {
-
+           
             var id = _bll.Add(item);
             return Ok();
         }

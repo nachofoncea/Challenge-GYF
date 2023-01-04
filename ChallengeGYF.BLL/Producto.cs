@@ -10,5 +10,20 @@ namespace ChallengeGYF.BLL
         {
             _service = service;
         }
+
+        public virtual T Vender(int Presupuesto)
+        {
+            try
+            {
+                var _ls = _service.Vender(Presupuesto);
+
+                return _ls;
+            }
+            catch (System.Exception e)
+            {
+
+                throw;
+            }
+        }
     }
 }
