@@ -1,22 +1,42 @@
 <h1 mat-dialog-title>Presupuesto</h1>
 <input type="number"
        class="form-control" 
-       placeholder="Ingrese un monto entre $1 y 1.000.000">
-<div mat-dialog-content style="height:80px;width: 500px;margin-top: 10px;"><a style="color: purple; 
+       placeholder="Ingrese un monto entre $1 y 1.000.000"
+       [(ngModel)]="model.Presupuesto">
+       
+<div mat-dialog-content style="height:60px;width: 500px;margin-top: 10px;"><a style="color: purple; 
                                                                     padding-left:40%;">Resultado:</a></div>
-<table class="table">
-    <thead>
-      <tr>
-        <th scope="col">ID</th>
-        <th scope="col">Precio</th>
-        <th scope="col">Categoria</th>
-      </tr>
-    </thead>
-    <tbody>
-    </tbody>
-  </table>
+
+            <div *ngIf="_errors.length>0" class="alert alert-danger" role="alert">
+                <ul>
+                    <li *ngFor="let erro of _errors">
+                        * {{ erro }}
+                    </li>
+                </ul>
+            </div>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Categoria</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                        <tr *ngFor="let item of datos; let idx = index">
+                                        <td>
+                                            <a class="text-right">{{item.ProductoID}} </a>
+                                        </td>
+                                        <td>
+                                            <b class="text-right">${{item.Precio}} </b>
+                                        </td>
+                                        <td>
+                                            <a class="text-right">{{item.Categoria}} </a>
+                                        </td>
+                                </tbody>
+                            </table>
 <div mat-dialog-actions>
-  <button type="button" class="btn btn-success" style="margin-right: 300px;">Calcular</button>
+  <button type="button" class="btn btn-success"  (click)="calcular(model.Presupuesto)" style="margin-right: 300px;">Calcular</button>
   <button mat-button mat-dialog-close style="color: red;">Cerrar</button>
  
 </div>

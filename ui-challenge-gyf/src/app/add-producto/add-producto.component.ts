@@ -54,14 +54,14 @@ export class AddProductoComponent implements OnInit {
       if(this.isValid() == true)
       {
         console.log(this._producto.ProductoID)
-        if(this._producto.ProductoID == NaN == null)
+        if(this._producto.ProductoID == NaN  == null)
         {  
         this.productoservice.saveArticulo(this._producto)
                             .subscribe(resp=> this.router.navigate(["/"]));
         }
         else
         {
-        this.productoservice.Update(this._producto)
+        this.productoservice.update(this._producto)
                             .subscribe(resp=> this.router.navigate(["/"]));
         }
     }; 

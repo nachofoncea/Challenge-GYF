@@ -1,29 +1,25 @@
 ﻿using ChallengeGYF.BLL;
 using IDal = ChallengeGYF.DAL.Interfaces.IProducto<ChallengeGYF.Shared.DTO.DTOProducto>;
 using T = ChallengeGYF.Shared.DTO.DTOProducto;
+using DTOEntity = ChallengeGYF.Shared.DTO.DTOProducto;
 
 namespace ChallengeGYF.BLL
 {
     public class Producto : BLLBase<T>, BLL.Interfaces.IProducto<T>
     {
+        IDal service2;
+
         public Producto(IDal service)
         {
             _service = service;
+            service2 = service;
         }
 
-        public virtual T Vender(int Presupuesto)
+        public List<DTOEntity> Vender(int Presupuesto)
         {
-            try
-            {
-                var _ls = _service.Vender(Presupuesto);
+            var _ls = service2.Vender(Presupuesto);
 
-                return _ls;
-            }
-            catch (System.Exception e)
-            {
-
-                throw;
-            }
+            return _ls;
         }
     }
 }

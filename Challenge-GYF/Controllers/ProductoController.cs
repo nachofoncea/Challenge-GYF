@@ -94,10 +94,10 @@ namespace ChallengeGYF.API.Controllers
         }
 
         [HttpGet]
-        [Route("{ID}")]
-        public DTOEntity Vender(int Presupuesto)
+        [Route("Vender/{Presupuesto}")]
+        public List<DTOEntity> Vender(int Presupuesto)
         {
-            return _bll.Vender(Presupuesto);
+                return _bll.Vender(Presupuesto);
         }
 
         [HttpDelete]

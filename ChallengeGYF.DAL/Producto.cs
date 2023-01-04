@@ -7,6 +7,8 @@ using ModelEntity = ChallengeGYF.DAL.EF.Models.Producto;
 using ContextDB = ChallengeGYF.DAL.EF.Models.ChallengeGYFContext;
 using Microsoft.EntityFrameworkCore;
 using ChallengeGYF.Shared.DTO;
+using Azure.Core;
+using System.Net;
 
 namespace ChallengeGYF.DAL.EF
 {
@@ -77,9 +79,39 @@ namespace ChallengeGYF.DAL.EF
             return _Map(_GetByID(ID));
         }
 
-        public DTOEntity Vender(int Presupuesto)
+        public List<DTOEntity> Vender(int Presupuesto)
         {
-            throw new NotImplementedException();
+
+            var _ls = new List<DTOProducto>();
+
+            using (var context1 = new ContextDB())
+            {
+                var first_product = context1.Producto
+                                    .Include(x => x.Categoria)
+                                    .Where(x => x.Precio < Presupuesto)
+                                    .FirstOrDefault();
+
+                if (first_product != null)
+                    using (var context2 = new ContextDB())
+                    {
+                        var second_product = context2.Producto
+                                            .Include(x => x.Categoria)
+                                            .Where(x => x.Precio <= Presupuesto - first_product.Precio &&
+                                                   x.CategoriaID != first_product.CategoriaID)
+                                            .FirstOrDefault();
+
+                        if (second_product != null)
+                        {
+                            _ls.Add(this._Map(first_product));
+                            _ls.Add(this._Map(second_product));
+                        }
+                }
+            }
+
+            if (_ls.Count() < 2)
+            {
+            }
+            return _ls;
         }
 
 

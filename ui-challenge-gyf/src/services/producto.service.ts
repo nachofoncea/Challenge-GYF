@@ -32,9 +32,7 @@ export class ProductoService {
     };
 
     return this.httpClient.delete<void>(_url, httpdeleteOptions)
-                        .pipe(
-            
-           );
+                        .pipe();
   }
 
   getByID(id: number){
@@ -50,7 +48,7 @@ export class ProductoService {
                
   }
 
-  Update(producto:ProductoModel): Observable<ProductoModel>{
+  update(producto:ProductoModel): Observable<ProductoModel>{
     
     let _url=environment.apiUrl + "Producto";
 
@@ -58,5 +56,11 @@ export class ProductoService {
 
   }
 
+  CalcularVenta(presupuesto: number){
+
+    let _url=environment.apiUrl + "Producto/Vender/";
+    return this.httpClient.get(_url + presupuesto);
+
+  }
 
 }
