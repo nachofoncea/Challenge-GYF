@@ -52,7 +52,7 @@ namespace ChallengeGYF.API.Controllers
             {
                 return StatusCode(400, "El precio debe ser menor a 1000000");
             }
-            if (item.Categoria == null)
+            if (item.CategoriaID == null)
             {
                 return StatusCode(400, "No hay Categoria seleccionada");
             }
@@ -75,7 +75,7 @@ namespace ChallengeGYF.API.Controllers
             {
                 return StatusCode(400, "El precio debe ser menor a 1000000");
             }
-            if (item.Categoria == null)
+            if (item.CategoriaID == null)
             {
                 return StatusCode(400, "No hay Categoria seleccionada");
             }

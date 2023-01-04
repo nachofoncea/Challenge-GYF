@@ -1,8 +1,7 @@
 ﻿<Properties StartupConfiguration="{4ED3D380-273A-414F-B698-4E083A01F2BA}|https">
+  <MonoDevelop.Ide.ItemProperties.ChallengeGYF.Test FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.DAL.ChallengeGYF.DAL.EF PreferredExecutionTarget="/Applications/Firefox.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.ChallengeGYF.API PreferredExecutionTarget="/Applications/Firefox.app" />
   <MultiItemStartupConfigurations />
