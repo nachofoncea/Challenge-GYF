@@ -18,3 +18,8 @@ Para ello tenemos condiciones:
 
 -En otro documento se entregan los scripts para la creacion de la base de datos.
 
+-Para establecer conexion con la base de datos, en el archivo AppSettings.Json se debe colocar el connectionString correspondiente a la base de datos a usar.
+
+-La interfaz de usuario está desarollada en Angular, abrir la subcarpeta del proyecto "ui-challenge-gyf" con VS Code ejecutar en la consola NPM Install (para instalar las dependencias y paquetes del proyecto) y correr el comando ng serve, si todo salió correcto debería funcionar en "http://localhost:4200/"
+
+-Para abrir la solucion del proyecto de .NET, recomiendo usar Visual Studio 2022 dado que el proyecto está en NET 7.
