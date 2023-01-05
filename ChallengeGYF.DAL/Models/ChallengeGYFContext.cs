@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Configuration;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace ChallengeGYF.DAL.EF.Models;
 
@@ -20,8 +22,16 @@ public partial class ChallengeGYFContext : DbContext
     public virtual DbSet<Producto> Producto { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=localhost;Database=ChallengeGYF;User Id = sa; Password=123456_mbP;TrustServerCertificate=True;MultipleActiveResultSets=true;");
+    {
+        IConfigurationRoot configuration = new ConfigurationBuilder()
+                          .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+                          .AddJsonFile("appsettings.json")
+                          .Build();
+
+        optionsBuilder.UseSqlServer(configuration.GetConnectionString("myDb"));
+
+    }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
