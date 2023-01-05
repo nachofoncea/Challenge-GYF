@@ -10,6 +10,8 @@ using System;
 using Microsoft.AspNetCore.Http;
 using ChallengeGYF.Shared.DTO;
 using System.Net.Http.Headers;
+using ChallengeGYF.DAL.EF.Models;
+using Ducasse.Shared.Constants;
 
 namespace ChallengeGYF.API.Controllers
 {
@@ -20,7 +22,7 @@ namespace ChallengeGYF.API.Controllers
     public class ProductoController : ControllerBase
     {
 
-        private readonly IProducto<DTOEntity> _bll;
+        private readonly IProducto<DTOEntity> _bll; 
         private readonly ILogger<ProductoController> _logger;
 
         public ProductoController(ILogger<ProductoController> logger,
@@ -43,14 +45,14 @@ namespace ChallengeGYF.API.Controllers
         {
             item.FechaCarga = System.DateTime.Now;
 
-            if (item.Precio <= 0)
+            if (item.Precio <= Constants.MontoMin)
             {
-                return StatusCode(400, "El precio debe ser mayor a 0");
+                return StatusCode(400, "El precio debe ser mayor a " + Constants.MontoMin);
             }
 
-            if (item.Precio > 1000000)
+            if (item.Precio > Constants.MontoMax)
             {
-                return StatusCode(400, "El precio debe ser menor a 1000000");
+                return StatusCode(400, "El precio debe ser menor a " + Constants.MontoMax);
             }
             if (item.CategoriaID == null)
             {
@@ -59,21 +61,21 @@ namespace ChallengeGYF.API.Controllers
             else
             {
                 var id = _bll.Add(item);
-                return Ok();
+                return Ok("El producto ha sido añadido correctamente");
             }
         }
 
         [HttpPut]
         public ActionResult Update([FromBody] Shared.DTO.DTOProducto item)
         {
-            if (item.Precio <= 0)
+            if (item.Precio <= Constants.MontoMin)
             {
-                return StatusCode(400, "El precio debe ser mayor a 0");
+                return StatusCode(400, "El precio debe ser mayor a " + Constants.MontoMin);
             }
 
-            if (item.Precio > 1000000)
+            if (item.Precio > Constants.MontoMax)
             {
-                return StatusCode(400, "El precio debe ser menor a 1000000");
+                return StatusCode(400, "El precio debe ser menor a " + Constants.MontoMax);
             }
             if (item.CategoriaID == null)
             {
@@ -82,7 +84,7 @@ namespace ChallengeGYF.API.Controllers
             else
             {
                 _bll.Update(item);
-                return Ok();
+                return Ok("El producto " + item.ProductoID + " ha sido actualizado correctamente");
             }
         }
 
@@ -97,7 +99,7 @@ namespace ChallengeGYF.API.Controllers
         [Route("Vender/{Presupuesto}")]
         public List<DTOEntity> Vender(int Presupuesto)
         {
-                return _bll.Vender(Presupuesto);
+            return _bll.Vender(Presupuesto);
         }
 
         [HttpDelete]
@@ -105,7 +107,7 @@ namespace ChallengeGYF.API.Controllers
         public ActionResult Delete(int ID)
         {
             _bll.Delete(ID);
-            return Ok();
+            return Ok("El Producto " + ID + " ha sido eliminado");
         }
 
     }

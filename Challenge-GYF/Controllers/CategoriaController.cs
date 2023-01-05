@@ -43,14 +43,14 @@ namespace ChallengeGYF.API.Controllers
         {
            
             var id = _bll.Add(item);
-            return Ok();
+            return Ok("La categoria ha sido añadida correctamente");
         }
 
         [HttpPut]
         public ActionResult Update([FromBody] Shared.DTO.DTOCategoria item)
         {
             _bll.Update(item);
-            return Ok();
+            return Ok("La categoria " + item.CategoriaID + " ha sido actualizada correctamente");
         }
 
         [HttpGet]
@@ -65,7 +65,7 @@ namespace ChallengeGYF.API.Controllers
         public ActionResult Delete(int ID)
         {
             _bll.Delete(ID);
-            return Ok();
+            return Ok("La categoria " + ID + " ha sido eliminada");
         }
     }
 }

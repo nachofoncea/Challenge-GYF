@@ -12,6 +12,10 @@
     <Compile Remove="ChallengeGYF.Shared.IOC\obj\Debug\net7.0\ChallengeGYF.Shared.IOC.AssemblyInfo.cs" />
     <Compile Remove="ChallengeGYF.Shared.IOC\obj\Debug\net7.0\ChallengeGYF.Shared.IOC.GlobalUsings.g.cs" />
     <Compile Remove="ChallengeGYF.Shared.IOC\obj\Debug\net7.0\ChallengeGYF.Shared.IOC.AssemblyInfo.cs" />
+    <Compile Remove="Constants\obj\Debug\net7.0\Constants.GlobalUsings.g.cs" />
+    <Compile Remove="Constants\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Remove="Constants\obj\Debug\net7.0\Constants.AssemblyInfo.cs" />
+    <Compile Remove="Constants\Constants.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="ChallengeGYF.Shared.IOC\obj\ChallengeGYF.Shared.IOC.csproj.nuget.dgspec.json" />
@@ -43,5 +47,16 @@
     <None Remove="ChallengeGYF.Shared.IOC\bin\Debug\net7.0\ChallengeGYF.Shared.IOC.dll" />
     <None Remove="ChallengeGYF.Shared.IOC\obj\Debug\net7.0\ref\ChallengeGYF.Shared.IOC.dll" />
     <None Remove="ChallengeGYF.Shared.IOC\bin\Debug\net7.0\ChallengeGYF.Shared.IOC.pdb" />
+    <None Remove="Constants\Properties\launchSettings.json" />
+    <None Remove="Constants\obj\Debug\net7.0\Constants.csproj.AssemblyReference.cache" />
+    <None Remove="Constants\obj\Constants.csproj.nuget.g.props" />
+    <None Remove="Constants\obj\Constants.csproj.nuget.g.targets" />
+    <None Remove="Constants\obj\project.assets.json" />
+    <None Remove="Constants\obj\project.nuget.cache" />
+    <None Remove="Constants\obj\Constants.csproj.nuget.dgspec.json" />
+    <None Remove="Constants\obj\Debug\net7.0\Constants.assets.cache" />
+    <None Remove="Constants\obj\Debug\net7.0\Constants.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="Constants\obj\Debug\net7.0\Constants.AssemblyInfoInputs.cache" />
+    <None Remove="Constants\obj\Debug\net7.0\Constants.csproj.FileListAbsolute.txt" />
   </ItemGroup>
 </Project>

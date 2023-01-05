@@ -2293,6 +2293,19 @@
         "runtime": {
           "bin/placeholder/ChallengeGYF.Shared.IOC.dll": {}
         }
+      },
+      "Constants/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Constants.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Constants.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -7167,6 +7180,11 @@
       "type": "project",
       "path": "../ChallengeGYF.DTO/ChallengeGYF.Shared.IOC/ChallengeGYF.Shared.IOC.csproj",
       "msbuildProject": "../ChallengeGYF.DTO/ChallengeGYF.Shared.IOC/ChallengeGYF.Shared.IOC.csproj"
+    },
+    "Constants/1.0.0": {
+      "type": "project",
+      "path": "../ChallengeGYF.DTO/Constants/Constants.csproj",
+      "msbuildProject": "../ChallengeGYF.DTO/Constants/Constants.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7177,6 +7195,7 @@
       "ChallengeGYF.DAL.Interfaces >= 1.0.0",
       "ChallengeGYF.DTO >= 1.0.0",
       "ChallengeGYF.Shared.IOC >= 1.0.0",
+      "Constants >= 1.0.0",
       "Microsoft.OpenApi >= 1.4.5",
       "Swashbuckle.AspNetCore.Swagger >= 6.4.0",
       "Swashbuckle.AspNetCore.SwaggerGen >= 6.4.0",
@@ -7226,6 +7245,9 @@
             },
             "/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.DTO/ChallengeGYF.Shared.IOC/ChallengeGYF.Shared.IOC.csproj": {
               "projectPath": "/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.DTO/ChallengeGYF.Shared.IOC/ChallengeGYF.Shared.IOC.csproj"
+            },
+            "/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.DTO/Constants/Constants.csproj": {
+              "projectPath": "/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.DTO/Constants/Constants.csproj"
             }
           }
         }
