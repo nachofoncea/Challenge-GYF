@@ -1,0 +1,12 @@
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.DTO/bin/Debug/net7.0/ChallengeGYF.DTO.deps.json
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.DTO/bin/Debug/net7.0/ChallengeGYF.DTO.dll
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.DTO/bin/Debug/net7.0/ChallengeGYF.DTO.pdb
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.DTO/obj/Debug/net7.0/ChallengeGYF.DTO.csproj.AssemblyReference.cache
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.DTO/obj/Debug/net7.0/ChallengeGYF.DTO.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.DTO/obj/Debug/net7.0/ChallengeGYF.DTO.AssemblyInfoInputs.cache
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.DTO/obj/Debug/net7.0/ChallengeGYF.DTO.AssemblyInfo.cs
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.DTO/obj/Debug/net7.0/ChallengeGYF.DTO.csproj.CoreCompileInputs.cache
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.DTO/obj/Debug/net7.0/ChallengeGYF.DTO.dll
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.DTO/obj/Debug/net7.0/refint/ChallengeGYF.DTO.dll
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.DTO/obj/Debug/net7.0/ChallengeGYF.DTO.pdb
+/Users/nachofoncea/Proyectos/ChallengeGYF/Challenge-GYF/ChallengeGYF.DTO/obj/Debug/net7.0/ref/ChallengeGYF.DTO.dll
