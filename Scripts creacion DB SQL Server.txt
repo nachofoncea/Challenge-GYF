@@ -1,6 +1,7 @@
 
 //Scipt para crear base de datos SQLServer para este challenge
 
+
 CREATE DATABASE [ChallengeGYF]
  CONTAINMENT = NONE
  ON  PRIMARY 
