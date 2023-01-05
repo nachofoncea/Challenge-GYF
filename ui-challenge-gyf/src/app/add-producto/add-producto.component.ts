@@ -28,7 +28,7 @@ export class AddProductoComponent implements OnInit {
              
    ngOnInit() {
     this.makeQuery()
-
+debugger
     this.productoID = this.route.snapshot.paramMap.get('ProductoID') || '';
 
         if(this.productoID != "")

@@ -61,7 +61,7 @@ namespace ChallengeGYF.API.Controllers
             else
             {
                 var id = _bll.Add(item);
-                return Ok("El producto ha sido añadido correctamente");
+                return Ok();
             }
         }
 
@@ -84,7 +84,7 @@ namespace ChallengeGYF.API.Controllers
             else
             {
                 _bll.Update(item);
-                return Ok("El producto " + item.ProductoID + " ha sido actualizado correctamente");
+                return Ok();
             }
         }
 
@@ -96,10 +96,10 @@ namespace ChallengeGYF.API.Controllers
         }
 
         [HttpGet]
-        [Route("Vender/{Presupuesto}")]
-        public List<DTOEntity> Vender(int Presupuesto)
+        [Route("CalcularProductos/{Presupuesto}")]
+        public List<DTOEntity> CalcularProductos(int Presupuesto)
         {
-            return _bll.Vender(Presupuesto);
+            return _bll.CalcularProductos(Presupuesto);
         }
 
         [HttpDelete]

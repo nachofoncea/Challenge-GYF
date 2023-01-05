@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using ChallengeGYF.Shared.DTO;
 using Azure.Core;
 using System.Net;
+using System.Collections;
 
 namespace ChallengeGYF.DAL.EF
 {
@@ -79,43 +80,75 @@ namespace ChallengeGYF.DAL.EF
             return _Map(_GetByID(ID));
         }
 
-        public List<DTOEntity> Vender(int Presupuesto)
+
+        public List<DTOEntity> GetProductos(int cat, int presup)
         {
-
-            var _ls = new List<DTOProducto>();
-
             using (var context1 = new ContextDB())
             {
-                var first_product = context1.Producto
-                                    .Include(x => x.Categoria)
-                                    .Where(x => x.Precio < Presupuesto)
-                                    .OrderByDescending(x=> x.Precio)
-                                    .FirstOrDefault();
-
-                if (first_product != null)
-                    using (var context2 = new ContextDB())
-                    {
-                        var second_product = context2.Producto
+                var _list1 = (from p in context1.Producto
                                             .Include(x => x.Categoria)
-                                            .Where(x => x.Precio <= Presupuesto - first_product.Precio &&
-                                                   x.CategoriaID != first_product.CategoriaID)
-                                            .OrderByDescending(x => x.Precio)
-                                            .FirstOrDefault();
+                                            .Where(x => x.Precio < presup &&
+                                                   x.CategoriaID == cat)
 
-                        if (second_product != null)
+                              select new DTOProducto
+                              {
+                                  ProductoID = p.ProductoID,
+                                  Precio = p.Precio,
+                                  CategoriaID = p.CategoriaID,
+                                  Categoria = p.Categoria.Descripcion
+                              })
+                               .ToList();
+
+                return _list1;
+            }
+        }
+
+        public List<DTOEntity> GetSeleccionProductos(List<DTOProducto>list1, List<DTOProducto> list2, int presup)
+        {
+            var _listSelected = new List<DTOProducto>();
+
+            var _max = new { prod1 = -1, prod2 = -1, precio = -1 };
+
+            foreach (var prod1 in list1)
+            {
+                foreach (var item in list2)
+                {
+                    var _suma = prod1.Precio + item.Precio;
+                    if (_suma < presup)
+                    {
+                        if (_suma > _max.precio)
                         {
-                            _ls.Add(this._Map(first_product));
-                            _ls.Add(this._Map(second_product));
+                            _max = new
+                            {
+                                prod1 = prod1.ProductoID,
+                                prod2 = item.ProductoID,
+                                precio = _suma
+                            };
                         }
+                    }
                 }
             }
 
-            if (_ls.Count() < 2)
-            {
-            }
-            return _ls;
+            _listSelected.Add(list1.Find(x => x.ProductoID == _max.prod1));
+            _listSelected.Add(list2.Find(x => x.ProductoID == _max.prod2));
+
+            return _listSelected;
+
         }
 
+
+        public List<DTOProducto> CalcularProductos(int Presupuesto)
+        {
+
+            var list1 = GetProductos(1, Presupuesto).ToList();
+
+            var list2 = GetProductos(2, Presupuesto).ToList();
+
+            var _listSelected = GetSeleccionProductos(list1,list2,Presupuesto).ToList();
+
+            return _listSelected;     
+        }
+ 
 
         public void Delete(int ID)
         {

@@ -15,9 +15,9 @@ namespace ChallengeGYF.BLL
             service2 = service;
         }
 
-        public List<DTOEntity> Vender(int Presupuesto)
+        public List<DTOEntity> CalcularProductos(int Presupuesto)
         {
-            var _ls = service2.Vender(Presupuesto);
+            var _ls = service2.CalcularProductos(Presupuesto);
 
             return _ls;
         }
