@@ -22,16 +22,12 @@ export class ProductoService {
     let _url=environment.apiUrl+ "Producto";
     return this.httpClient.get<ProductoModel[]>(_url);
   }
+
   deleteProducto(id:any) : Observable<void>{
 
     let _url=environment.apiUrl+ "Producto/" + id;
-
-    let httpdeleteOptions = {
-      headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
-      body:id
-    };
-
-    return this.httpClient.delete<void>(_url, httpdeleteOptions)
+    
+    return this.httpClient.delete<void>(_url, this.httpOptions)
                         .pipe();
   }
 
@@ -58,7 +54,7 @@ export class ProductoService {
 
   CalcularVenta(presupuesto: number){
 
-    let _url=environment.apiUrl + "Producto/Vender/";
+    let _url=environment.apiUrl + "Producto/CalcularProductos/";
     return this.httpClient.get(_url + presupuesto);
 
   }

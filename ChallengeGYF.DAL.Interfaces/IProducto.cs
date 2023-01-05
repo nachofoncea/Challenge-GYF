@@ -7,7 +7,7 @@ namespace ChallengeGYF.DAL.Interfaces
     public interface IProducto<T> : IGenericBase<T>
     {
 
-        List<DTOEntity> Vender(int Presupuesto);
+        List<DTOEntity> CalcularProductos(int Presupuesto);
 
     }
 }
