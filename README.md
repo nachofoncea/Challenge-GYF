@@ -12,7 +12,7 @@ Para ello tenemos condiciones:
 
 //Otros detalles
 
--Para este caso, tenemos creado los metodos que pueden crear, leer, editar, y eliminar tanto los productos como las categorias. De todos modos, para este caso, la edicion, borrado y eliminado de CATEGORIAS, no está disponible para el usuario a través de la interfaz visual.
+-Para este caso, tenemos creado los metodos que pueden crear, leer, editar, y eliminar tanto los productos como las categorias. De todos modos, para este caso, la edicion, creacion y eliminado de CATEGORIAS, no está disponible para el usuario a través de la interfaz visual.
 
 -Los productos se pueden crear, borrar y editar las veces que sea, está completamente disponible para el usuario.
 
