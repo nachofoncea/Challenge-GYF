@@ -21,4 +21,11 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ChallengeGYF.DAL.Interfaces\ChallengeGYF.DAL.Interfaces.csproj" />
+    <ProjectReference Include="..\ChallengeGYF.DAL\ChallengeGYF.DAL.EF.csproj" />
+    <ProjectReference Include="..\ChallengeGYF.BLL\ChallengeGYF.BLL.csproj" />
+    <ProjectReference Include="..\ChallengeGYF.BLL\ChallengeGYF.BLL.Interfaces\ChallengeGYF.BLL.Interfaces.csproj" />
+    <ProjectReference Include="..\Challenge-GYF\ChallengeGYF.API.csproj" />
+  </ItemGroup>
 </Project>

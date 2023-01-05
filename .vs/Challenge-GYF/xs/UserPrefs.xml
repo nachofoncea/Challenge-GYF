@@ -1,33 +1,37 @@
 ﻿<Properties StartupConfiguration="{4ED3D380-273A-414F-B698-4E083A01F2BA}|https">
-  <MonoDevelop.Ide.ItemProperties.ChallengeGYF.Test FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.DAL.ChallengeGYF.DAL.EF PreferredExecutionTarget="/Applications/Firefox.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Shared.Constants FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.ChallengeGYF.API PreferredExecutionTarget="/Applications/Firefox.app" />
   <MultiItemStartupConfigurations />
   <DisabledProjects>
     <String>Challenge-GYF.BLL/Challenge-GYF.BLL.Interfaces/Challenge-GYF.BLL.Interfaces.csproj</String>
   </DisabledProjects>
-  <MonoDevelop.Ide.Workbench ActiveDocument="ChallengeGYF.BLL/Producto.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ChallengeGYF.Test/ProductoTest.cs">
     <Files>
-      <File FileName="ChallengeGYF.DAL/Producto.cs" Line="84" Column="1" />
-      <File FileName="ChallengeGYF.DAL/Models/Producto.cs" Line="18" Column="54" />
-      <File FileName="ChallengeGYF.DTO/DTOProducto.cs" Line="11" Column="23" />
-      <File FileName="ChallengeGYF.BLL/Categoria.cs" Line="1" Column="1" />
-      <File FileName="ChallengeGYF.DTO/DTOCategoria.cs" Line="1" Column="1" />
-      <File FileName="Challenge-GYF/Controllers/CategoriaController.cs" Line="44" Column="12" />
-      <File FileName="Challenge-GYF/Controllers/ProductoController.cs" Line="100" Column="45" />
-      <File FileName="ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/IGenericBase.cs" Line="8" Column="4" />
-      <File FileName="ChallengeGYF.DAL/Categoria.cs" Line="12" Column="30" />
+      <File FileName="ChallengeGYF.DAL/Producto.cs" Line="125" Column="1" />
+      <File FileName="ChallengeGYF.DAL/Models/Producto.cs" Line="1" Column="1" />
+      <File FileName="ChallengeGYF.DTO/DTOProducto.cs" />
+      <File FileName="ChallengeGYF.BLL/Categoria.cs" />
+      <File FileName="ChallengeGYF.DTO/DTOCategoria.cs" />
+      <File FileName="Challenge-GYF/Controllers/CategoriaController.cs" Line="46" Column="36" />
+      <File FileName="Challenge-GYF/Controllers/ProductoController.cs" Line="63" Column="39" />
+      <File FileName="ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/IGenericBase.cs" />
+      <File FileName="ChallengeGYF.DAL/Categoria.cs" />
       <File FileName="Challenge-GYF/Program.cs" Line="16" Column="1" />
-      <File FileName="ChallengeGYF.BLL/BLLBase.cs" Line="7" Column="47" />
-      <File FileName="ChallengeGYF.DAL.Interfaces/IProducto.cs" Line="14" Column="1" />
-      <File FileName="ChallengeGYF.DAL.Interfaces/IGenericBase.cs" Line="12" Column="29" />
-      <File FileName="ChallengeGYF.DAL.Interfaces/ICategoria.cs" Line="1" Column="1" />
+      <File FileName="ChallengeGYF.BLL/BLLBase.cs" />
+      <File FileName="ChallengeGYF.DAL.Interfaces/IProducto.cs" Line="10" Column="24" />
+      <File FileName="ChallengeGYF.DAL.Interfaces/IGenericBase.cs" />
+      <File FileName="ChallengeGYF.DAL.Interfaces/ICategoria.cs" />
       <File FileName="ChallengeGYF.BLL/Producto.cs" Line="18" Column="32" />
-      <File FileName="ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/IProducto.cs" Line="7" Column="18" />
+      <File FileName="ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/IProducto.cs" Line="7" Column="25" />
       <File FileName="ChallengeGYF.BLL/ChallengeGYF.BLL.Interfaces/ICategoria.cs" Line="1" Column="1" />
-      <File FileName="ChallengeGYF.DAL/BaseDAL.cs" Line="12" Column="39" />
+      <File FileName="ChallengeGYF.DAL/BaseDAL.cs" />
+      <File FileName="../../../../../usr/local/share/dotnet/sdk/7.0.101/Microsoft.Common.CurrentVersion.targets" />
+      <File FileName="ChallengeGYF.Test/ProductoTest.cs" Line="40" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -38,22 +42,28 @@
               <Node name="ChallengeGYF.BLL.Interfaces" expanded="True" />
             </Node>
             <Node name="DAL" expanded="True">
-              <Node name="ChallengeGYF.DAL.EF" expanded="True" />
-              <Node name="ChallengeGYF.DAL.Interfaces" expanded="True">
-                <Node name="IProducto.cs" selected="True" />
+              <Node name="ChallengeGYF.DAL.EF" expanded="True">
+                <Node name="Models" expanded="True" />
               </Node>
+              <Node name="ChallengeGYF.DAL.Interfaces" expanded="True" />
             </Node>
             <Node name="Shared" expanded="True">
-              <Node name="ChallengeGYF.DTO" expanded="True" />
+              <Node name="Constants" expanded="True" />
             </Node>
-            <Node name="ChallengeGYF.API" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="ProjectDependencies" expanded="True" />
-              </Node>
-              <Node name="Controllers" expanded="True" />
-              <Node name="Properties" expanded="True" />
+            <Node name="ChallengeGYF.Test" expanded="True">
+              <Node name="Dependencies" expanded="True" />
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="Challenge-GYF" expanded="True" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Challenge-GYF" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

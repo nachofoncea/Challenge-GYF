@@ -89,6 +89,7 @@ namespace ChallengeGYF.DAL.EF
                 var first_product = context1.Producto
                                     .Include(x => x.Categoria)
                                     .Where(x => x.Precio < Presupuesto)
+                                    .OrderByDescending(x=> x.Precio)
                                     .FirstOrDefault();
 
                 if (first_product != null)
@@ -98,6 +99,7 @@ namespace ChallengeGYF.DAL.EF
                                             .Include(x => x.Categoria)
                                             .Where(x => x.Precio <= Presupuesto - first_product.Precio &&
                                                    x.CategoriaID != first_product.CategoriaID)
+                                            .OrderByDescending(x => x.Precio)
                                             .FirstOrDefault();
 
                         if (second_product != null)
