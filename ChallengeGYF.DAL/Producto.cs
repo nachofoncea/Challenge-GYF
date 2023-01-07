@@ -85,7 +85,7 @@ namespace ChallengeGYF.DAL.EF
         {
             using (var context1 = new ContextDB())
             {
-                var _list1 = (from p in context1.Producto
+                var _list = (from p in context1.Producto
                                             .Include(x => x.Categoria)
                                             .Where(x => x.Precio < presup &&
                                                    x.CategoriaID == cat)
@@ -99,7 +99,7 @@ namespace ChallengeGYF.DAL.EF
                               })
                                .ToList();
 
-                return _list1;
+                return _list;
             }
         }
 
@@ -111,9 +111,10 @@ namespace ChallengeGYF.DAL.EF
 
             foreach (var prod1 in list1)
             {
-                foreach (var item in list2)
+                foreach (var prod2 in list2)
                 {
-                    var _suma = prod1.Precio + item.Precio;
+                    var _suma = prod1.Precio + prod2.Precio;
+
                     if (_suma < presup)
                     {
                         if (_suma > _max.precio)
@@ -121,7 +122,7 @@ namespace ChallengeGYF.DAL.EF
                             _max = new
                             {
                                 prod1 = prod1.ProductoID,
-                                prod2 = item.ProductoID,
+                                prod2 = prod2.ProductoID,
                                 precio = _suma
                             };
                         }
