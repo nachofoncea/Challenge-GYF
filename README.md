@@ -22,4 +22,4 @@ Para ello tenemos condiciones:
 
 -La interfaz de usuario está desarollada en Angular, abrir la subcarpeta del proyecto "ui-challenge-gyf" con VS Code ejecutar en la consola NPM Install (para instalar las dependencias y paquetes del proyecto) y correr el comando ng serve, si todo salió correcto debería funcionar en "http://localhost:4200/"
 
--Para abrir la solucion del proyecto de .NET, recomiendo usar Visual Studio 2022 dado que el proyecto está en NET 7.
+-Para abrir la solucion del proyecto .NET, recomiendo usar Visual Studio 2022 dado que el proyecto está en NET 7.
